@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row', // Coloca os itens lado a lado
     justifyContent: 'center', // Centraliza o conjunto de itens
     padding: 25, // Espaçamento ao redor
+
   },
   item: {
     alignItems: 'center', // Centraliza cada ícone e texto
@@ -80,16 +81,17 @@ const styles = StyleSheet.create({
   quadrado: {
     width: 62,  // Largura dos quadrados
     height: 62, // Altura dos quadrados
-    backgroundColor: '#ffffff', // Cor de fundo do quadrado
+    backgroundColor: '#ffff', // Cor de fundo do quadrado
     justifyContent: 'center', // Centraliza o conteúdo verticalmente
     alignItems: 'center', // Centraliza o conteúdo horizontalmente
     borderRadius: 10, // Arredonda os cantos
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
-    shadowRadius: 3.84,
+    shadowRadius: 3.90,
     elevation: 5, // Sombra para Android
-    left: 25
+    left: 25,
+
     
   },
   

@@ -4,7 +4,7 @@ import Constants from 'expo-constants'
 import { Header } from "../components/header";
 import { Categorias } from "../components/Categorias";
 import { Search } from "../components/search";
-import { Banner } from "../components/Banner";
+import { Banner } from "../components/banner";
 import Especialistas from "../components/Especialistas";
 
 
@@ -26,8 +26,8 @@ export default function Index() {
      <Categorias/>
       <Search/>
      <Banner/>
-     <Especialistas/>
 
+     <Especialistas/>
     </ScrollView>
   );
 }

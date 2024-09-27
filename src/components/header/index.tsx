@@ -21,7 +21,7 @@ export function Header() {
       </View>
 
       {/* Linha separadora */}
-      <View style={{ height: 0.2, backgroundColor: '#000000', marginTop: 10 }} />
+      <View style={{ height: 0.5, backgroundColor: '#000000', marginTop: 10 }} />
     </View>
   );
 }
