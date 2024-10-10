@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons'; // Ícone de estrela
 
 // Importar imagens
 import pessoa1 from '../../assets/pessoa1.jpg';
@@ -10,7 +11,7 @@ export default function Especialistas() {
   const especialistas = [
     { image: pessoa1, name: 'Mariana Carvalho', profession: 'Geneticista' },
     { image: pessoa2, name: 'Matheus Castro', profession: 'Geneticista' },
-    { image: pessoa3, name: ' Caio Graco', profession: 'Geneticista' },
+    { image: pessoa3, name: ' Caio Bruzaca ', profession: 'Geneticista' },
   ];
 
   return (
@@ -29,7 +30,13 @@ export default function Especialistas() {
               style={styles.image}
             />
             <Text style={styles.name}>{especialista.name}</Text>
-            <Text style={styles.profession}>{especialista.profession}</Text>
+            <View style={styles.professionContainer}>
+              <Text style={styles.profession}>{especialista.profession}</Text>
+              <View style={styles.starContainer}>
+                <FontAwesome name="star" size={13} color="black" />
+                <Text style={styles.starText}>5</Text>
+              </View>
+            </View>
           </View>
         ))}
       </View>
@@ -50,14 +57,12 @@ const styles = StyleSheet.create({
     color: '#226752',
     fontSize: 18,
     fontWeight: 'bold',
-    top:-30,
-
+    top: -30,
   },
   link: {
     color: '#52A6FF',
     fontSize: 16,
-    top:-30,
-
+    top: -30,
   },
   boxContainer: {
     flexDirection: 'row',
@@ -78,32 +83,47 @@ const styles = StyleSheet.create({
     width: '32%',
     height: 181,
     marginHorizontal: 8,
-    top:-30,
+    top: -30,
     right: 18,
-
   },
   image: {
     width: 63,
     height: 63,
     borderRadius: 50,
-    top:-24,
+    top: -24,
   },
   name: {
     color: '#226752',
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: 'normal', // Fonte mais fina
-    top:-10,  
+    top: -10,
     alignItems: 'center',
     textAlign: 'center', // Centraliza o texto
-
-    
-
+  },
+  professionContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    top: -10,
   },
   profession: {
     color: 'black',
-    fontSize: 13,
-   alignItems: 'center',
-   top: -10
-   
+    fontSize: 12,
+    alignItems: 'center',
+    left:16,
+  },
+  starContainer: {
+    flexDirection: 'row', // Permite que a estrela e o número fiquem lado a lado
+    alignItems: 'center',
+    marginLeft: 5, // Espaço entre o texto e a estrela
+    backgroundColor: '#D9D9D9', // Cor de fundo do quadrado
+    padding: 1, // Tamanho do quadrado
+    borderRadius: 1, // Bordas arredondadas
+    top: 32,
+    right: 75,
+  },
+  starText: {
+    marginLeft: 3, // Espaço entre a estrela e o número
+    fontSize: 9,
+    color: 'black',
   },
 });

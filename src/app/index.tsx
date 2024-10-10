@@ -4,13 +4,13 @@ import Constants from 'expo-constants'
 import { Header } from "../components/header";
 import { Categorias } from "../components/Categorias";
 import { Search } from "../components/search";
-import { Banner } from "../components/banner";
+import { Banner } from "../components/Banner";
 import Especialistas from "../components/Especialistas";
 
 
 const statusBarHeight = Constants.statusBarHeight;
 
-export default function Index() {
+export default function Indexn() {
   return (
     <ScrollView 
       style={{ flex: 1 }} 
@@ -26,7 +26,6 @@ export default function Index() {
      <Categorias/>
       <Search/>
      <Banner/>
-
      <Especialistas/>
     </ScrollView>
   );

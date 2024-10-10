@@ -58,14 +58,14 @@ export function Categorias() {
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: 10, // Ajuste de espaçamento ao redor de todo o conteúdo
+    padding: 24, // Ajuste de espaçamento ao redor de todo o conteúdo
     alignItems: 'center', // Centraliza o conteúdo horizontalmente
   },
   titulo: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#226752', // Cor do texto
-    right: 70,
+    right: 49,
   },
   container: {
     flexDirection: 'row', // Coloca os itens lado a lado
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   },
   item: {
     alignItems: 'center', // Centraliza cada ícone e texto
-    marginHorizontal: 13, // Espaçamento entre os itens
+    marginHorizontal: 10, // Espaçamento entre os itens
     width: 80,  // Aumenta a largura para comportar textos longos como "Emergência"
   },
   quadrado: {
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.90,
     elevation: 5, // Sombra para Android
-    left: 25,
+    left: 19,
 
     
   },
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   },
   textoIcone: {
     marginTop: 8, // Espaçamento entre o quadrado e o texto
-    fontSize: 14,
+    fontSize: 11,
     color: '#333',
     textAlign: 'center',
     left: 20,

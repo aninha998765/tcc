@@ -37,14 +37,14 @@ const AnimatedButton: React.FC = () => {
 const styles = StyleSheet.create({
   botao: {
     backgroundColor: '#DCEAE6', // Cor de fundo do botão
-    borderRadius: 10,
+    borderRadius: 13,
     paddingVertical: 4, // Reduz o espaçamento vertical
     paddingHorizontal: 20, // Reduz o espaçamento horizontal
     alignItems: 'center', // Centraliza o conteúdo horizontalmente
     width:100,
     height:30,
-    top: -74,
-    left: 64
+    top: -67,
+    left: 67,
   },
   textoBotao: {
     color: '#226752',

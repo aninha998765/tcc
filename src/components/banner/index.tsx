@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Pressable, Image, Text, StyleSheet } from 'react-native';
 import PagerView from 'react-native-pager-view';
-import AnimatedButton from './Buttom';
+import AnimatedButton from '../Banner/Buttom';
 
 export function Banner() {
   return (
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   banner: {
     width: '95%',
-    height: '80%',
+    height: '88%',
     backgroundColor: '#619C95',
     borderRadius: 20,
     justifyContent: 'center',
@@ -65,11 +65,11 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
-    fontSize: 19,
+    fontSize: 17,
     fontWeight: 'normal',
     textAlign: 'center',
     marginBottom: 10,
-    right: 84,
+    right: 87,
     top: 60,
   },
   image: {
@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
     height: '102%', // Ajusta a altura proporcionalmente
     borderRadius: 20,
     marginBottom: 10,
-    left: 100,
-    top: -24,
+    left: 105,
+    top: -25,
         // Sombra aplicada na imagem
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
